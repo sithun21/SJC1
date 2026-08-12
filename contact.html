@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anuradhapura  St.Joseph's College</title>
+<link rel="stylesheet" href="style.css">  
+<script src="script.js"></script>
+</head>
+<body>
+  <!--header-->
+  <header>
+   <div class="header">
+    <h1>Anuradhapura St.Joseph's College</h1>
+
+    <img class="logo" src="image/sjc.jpg" alt="College Logo">
+    <img class="logo1" src="image/1sjc.jpg" alt="College Logo1">
+</div>
+    <nav>
+      <ul> 
+        <li><a class="active" href="index.html">HOME</a></li>
+        <li><a class="#about" href="about.html">ABOUT</a></li>
+        <li><a class="#gallery"href="gallery.html">GALLERY</a></li>
+        <li><a class="#activities"href="activities.html">ACTIVITIES</a></li>
+        <li><a class="table" href="table.html">TABLE</a></li>
+        <li><a class="contact" href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+
+  </header>
+   
+
+  <center>
+  <h1>Contact us</h1>
+      <div class="contact-grid">
+        <div>
+          <p class="small">Do you need more information? Send us a message below or call us.</p>
+          <div class="card">
+            <strong>Contact Us</strong>
+            <p style="margin:6px 0" class="small">Email: info@stjosephsanu.edu.lk<br>Tel: +94 25 2222222</p>
+            <p class="small">Address: Main Road, Your City, Sri Lanka</p>
+            
+            </div>
+          </div>
+        </div>
+  <p>Connect with our school now in any way convenient for you. We will respond to your problems as soon as possible to provide you with quality service.</p>
+  </center>
+
+<center>
+<body>
+    <h1>Register Form</h1>
+    Frist Name <input type="text" id="first_name" placeholder="Enter Frist Name">
+    <br/>
+    <br/>
+     Last Name <input type="text" id="last_name" placeholder="Enter Last Name">
+    <br/>
+    <br/>
+    Middle Name <input type="text" id="middle_name" placeholder="Enter Middle Name">
+    <br/>
+    <br/>
+    <button onclick="submitForm()">Submit</button>
+    </center>
+        <section id="admissions">
+      <h2>admission</h2>
+      <p class="small">Apply today — limited space available for new students. Enter the details below.</p>
+      <div style="margin-top:12px" class="card">
+        <form onsubmit="event.preventDefault(); alert('Your request has been received. We will respond to you by phone or email.'); this.reset();">
+          <input type="text" name="name" placeholder="NAME *" required />
+          <input type="email" name="email" placeholder="E-MAIL *" required />
+          <input type="tel" name="phone" placeholder="CONTECTNUMBER" />
+          <textarea name="note" rows="4" placeholder="Notes / Questions"></textarea>
+          <button type="submit">SUBMIT</button>
+        </form>
+      </div>
+    </section>
+    <center>Thank You </center>
+</body>
+ </html>   

@@ -1,0 +1,169 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f5f5f5;
+  color: #222;
+}
+
+header {
+  background-color: #4e0404;
+  color: rgb(252, 239, 239);
+  text-align: center;
+  padding: 20px 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: rgb(236, 231, 231);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 20px;
+  background-color: rgb(243, 237, 237);
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.gallery img {
+  width: 200px;
+  height: 150px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+/* Simple Animation */
+.gallery img:hover {
+  transform: scale(1.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 10px;
+}
+
+footer {
+  background-color: #4e030d;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .gallery img {
+    width: 100%;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+}
+.responsive{
+width:100%;
+height:auto;
+}
+.side-img {
+    width: 280px;
+    float: right;   /* left දාලත් වෙනව */
+    margin: 10px 0 10px 15px;
+    border-radius: 10px;
+}
+.header {
+    background-color: #540000;
+    padding: 20px;
+    position: relative;
+}
+
+.logo {
+    height: 150px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+.logo1 {
+    height: 120px;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+}
+.logo2{
+    height: 120px;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+}
+   :root{
+      --accent:#c62828;
+      --dark:#222;
+      --muted:#666;
+      --card:#fff;
+      --bg:#f5f5f7;
+      --maxw:1100px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--dark);line-height:1.5}
+    .container{max-width:var(--maxw);margin:0 auto;padding:24px}
+    header{
+      background:linear-gradient(90deg, rgba(198,40,40,0.95), rgba(198,40,40,0.9));
+      color:#fff;padding:18px 0;box-shadow:0 2px 8px rgba(0,0,0,0.08)
+    }
+    .nav{
+      display:flex;align-items:center;justify-content:space-between;
+      gap:16px
+    }
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{
+      width:52px;height:52px;background:#fff;border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--accent);font-weight:700;
+      box-shadow:0 2px 6px rgba(0,0,0,0.12)
+    }
+    nav ul{list-style:none;display:flex;gap:14px;margin:0;padding:0}
+    nav a{color:#fff;text-decoration:none;font-weight:600}
+    .hero{
+      display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;padding:36px 0;
+    }
+    .hero h1{margin:0 0 12px;font-size:28px}
+    .hero p{margin:0 0 18px;color:rgba(255,255,255,0.95)}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(18,18,18,0.06)}
+    .cta{background:#fff;color:var(--accent);padding:10px 14px;border-radius:8px;font-weight:700;border:none;cursor:pointer}
+    main{padding:28px 0}
+    section{margin-bottom:26px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .feature{background:#fff;padding:18px;border-radius:10px;box-shadow:0 6px 16px rgba(0,0,0,0.04)}
+    .feature h3{margin:0 0 8px}
+    .contact-grid{display:grid;grid-template-columns:1fr 380px;gap:18px;align-items:start}
+    form input, form textarea{width:100%;padding:10px;border:1px solid #e6e6e6;border-radius:8px;margin-bottom:8px;font-size:14px}
+    form button{background:var(--accent);color:#fff;border:none;padding:10px 14px;border-radius:8px;cursor:pointer;font-weight:700}
+    footer{padding:18px 0;color:var(--muted);font-size:14px}
+    .small{font-size:13px;color:var(--muted)}
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr; text-align:center}
+      .contact-grid{grid-template-columns:1fr}
+      nav ul{display:none}
+    }
